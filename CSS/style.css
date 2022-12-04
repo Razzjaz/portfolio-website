@@ -3,8 +3,11 @@
 
 /*Colors used: Primary Color (Blue):#1a227e;
 Secondary Color: (Yellow): #ecca30;*/
+* {
+  box-sizing: border-box;
+}
 body{
-  background-color:lightblue;
+  background-color:FFefD6;
   font-family: 'Cormorant+Garamond',sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -12,6 +15,7 @@ body{
   color: #4a4a4a;
 }
 </head>
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -78,4 +82,16 @@ a:focus {
 .button.contact:hover {
   background-color: #0E5E6F;
   color: #ffffff;
+}
+header {
+  background-color: #ffefD6;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin:10px auto;
+  border-bottom: 3px solid #4a4a4a
+}
+selector {
+  position: relative;
 }
