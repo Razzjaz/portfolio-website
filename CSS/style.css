@@ -197,3 +197,15 @@ Extra-large devices (1920px or larger)
   padding: 10px
 }
 #about-page h3 { margin-top: 0;}
+
+  @keyframes color-change {
+    0% {fill: #4a4a4a;}
+    50% {fill: #CD104D;}
+    100% {fill: #FD841F;}
+  }
+.moon {
+  animation: 4s color-change infinite alternate linear;
+  }
+  @keyframes telescope-move {
+animation: 30s cloud-move infinite alternate linear;
+}
