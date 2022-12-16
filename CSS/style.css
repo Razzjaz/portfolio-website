@@ -1,27 +1,31 @@
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">>
-
 /*Colors used: Primary Color (Blue):#1a227e;
 Secondary Color: (Yellow): #ecca30;*/
 * {
   box-sizing: border-box;
 }
-body{
-  background-color:FFefD6;
-  font-family: 'Cormorant+Garamond',sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+
+body {
+  background-color: FFefD6;
+  font-family: 'Cormorant+Garamond', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-</head>
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
+
 h1 {
-font-size: 2.75em;
-font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
@@ -33,84 +37,113 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #ffffff;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover {
   color: #ecca30;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #1a227e;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #3A8891;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
+
 .button {
- display: inline-block;
- background-color: #ff7f50;
- color: white;
- font-weight: 400;
- text-decoration: none;
- padding: 10px;
- border-radius: 3px;
- border-bottom: 2px solid #994c30;
- transition-duration: 0.2s;
- transition-property: opacity;
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
 }
+
 .button.contact {
   background-color: transparent;
   color: #3A8891;
   text-transform: uppercase;
   border: 2px solid #0E5E6F;
 }
+
 .button.contact:hover {
   background-color: #0E5E6F;
   color: #ffffff;
 }
+
 header {
   background-color: #ffefD6;
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 15px;
   padding-left: 5px;
-  margin:10px auto;
+  margin: 10px auto;
   border-bottom: 3px solid #4a4a4a
 }
+
 selector {
   position: relative;
 }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
+
 .logo {
-  max-width: 250px;
+  max-width: 200px;
   text-align: center;
 }
+
 header {
   background-color: #ffe4c4;
   text-align: center;
@@ -119,93 +152,127 @@ header {
   position: relative;
   ;
 }
-nav > ul {
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
-  a:visited
-  display:inline-block;
-  width:100%
+
+nav>ul>li {
+  display:inline-block
+  margin-right:10px;
 }
-nav > ul > li > {
-  display:inline-block;
+
+nav>ul>li> {
+  display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
+
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
-  display:block;
+  display: block;
   text-align: center;
-  width:100%
+  width: 100%
 }
+
 main {
   padding-top: 133px;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
     padding-top: 99.8px;
-    .col-md-6 {
-  width: 50%;
-}
   }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  body{
-  font-size: 18px;
+  body {
+    font-size: 18px;
+  }
+
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-/* ==============================
+    /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
-/* ==============================
+    @media only screen and (min-width: 1440px) {}
+
+    /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
-#hero span {
-  display: block;
-}
-[class*="col-"] {
-  float: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 10px
-}
-#about-page h3 { margin-top: 0;}
+    @media only screen and (min-width: 1920px) {}
 
-  @keyframes color-change {
-    0% {fill: #4a4a4a;}
-    50% {fill: #CD104D;}
-    100% {fill: #FD841F;}
-  }
-.moon {
-  animation: 4s color-change infinite alternate linear;
-  }
-  @keyframes telescope-move {
+    #hero span {
+      display: block;
+    }
+
+    [class*="col-"] {
+      float: left;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      padding: 10px
+    }
+
+    #about-page h3 {
+      margin-top: 0;
+    }
+
+    .moon {
+      position: relative;
+      animation: 4s color-change infinite alternate linear;
+    }
+
+    @keyframes color-change {
+      0% {
+        fill: #4a4a4a;
+      }
+
+      50% {
+        fill: #CD104D;
+      }
+
+      100% {
+        fill: #FD841F;
+      }
+    }
+
+
+    /* @keyframes telescope-move {
 animation: 30s cloud-move infinite alternate linear;
+} */
+
+
+.right-column-style {
+  padding-left: 15px;
 }
