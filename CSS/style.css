@@ -144,14 +144,19 @@ selector {
 
 .logo {
 margin-right: auto;
-  max-width: 200px;
+  max-width: 150px;
   text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin:0
 }
 
 header {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  padding-top: 56px;
   padding: 30px 10%;
   background-color: #1a227e;
   ;
@@ -187,9 +192,9 @@ main {
 }
 
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -205,8 +210,40 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-
+  .logo {
+  margin-right: auto;
+    max-width: 200px;
+    text-align: center;
+  }
+  nav {
+    margin: auto 0;
+  }
+  .navtoggle li:not(:last-child) {
+  display: none;
 }
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 15px 15px;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+}
+
 
 /* ==============================
 Large devices (1024px or larger)
@@ -221,6 +258,10 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+  .navtoggle li:last-child {
+  display: none;
+}
+}
 }
     /* ==============================
 X-large devices (1440px or larger)
@@ -269,7 +310,22 @@ Extra-large devices (1920px or larger)
         fill: #FD841F;
       }
     }
-
+    .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right:0
+}
+ul{
+  list-style: disc;
+}
 
     /* @keyframes telescope-move {
 animation: 30s cloud-move infinite alternate linear;
@@ -278,4 +334,8 @@ animation: 30s cloud-move infinite alternate linear;
 
 .right-column-style {
   padding-left: 15px;
+}
+.fa-brands {
+  color: #1a227e;
+  font-size: 80px
 }
