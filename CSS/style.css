@@ -122,6 +122,27 @@ selector {
   position: relative;
 }
 
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.responsive.navtoggle li:not(:last-child) {
+  display: block;
+}
+.navtoggle, .navtoggle.responsive {
+position: relative;
+}
+.navtoggle li .icon {
+position: absolute;
+right: 0;
+top: 2px;
+font-size: 20px;
+padding-right:0
+}
+ul{
+list-style: disc;
+}
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -218,6 +239,9 @@ Medium devices (641px and larger)
   nav {
     margin: auto 0;
   }
+  nav li:last-child {
+  display: none;
+}
   .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -310,23 +334,9 @@ Extra-large devices (1920px or larger)
         fill: #FD841F;
       }
     }
-    .navtoggle li:not(:last-child) {
-    display: none;
-  }
-  .navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right:0
-}
-ul{
-  list-style: disc;
-}
 
+
+    
     /* @keyframes telescope-move {
 animation: 30s cloud-move infinite alternate linear;
 } */
