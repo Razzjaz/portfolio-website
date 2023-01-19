@@ -11,6 +11,14 @@ body{
   background:#080808;
   color: #fff;
 }
+.hero{
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("../img/pic/me.png");
+  background-size: cover;
+  background-position: center;
+}
 .intro{
   color:#F2850E;
 }
