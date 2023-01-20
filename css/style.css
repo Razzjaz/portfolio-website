@@ -12,11 +12,12 @@ body{
   color: #fff;
 }
 .hero{
-  width: 100%;
+  max-width: 80%;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url("../img/pic/me.png");
-  background-size: cover;
+  background-size: 50%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .intro{
