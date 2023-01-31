@@ -11,14 +11,14 @@ body{
   background:#080808;
   color: #fff;
 }
-.hero{
-  max-width: 80%;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url("../img/pic/me.png");
-  background-size: 50%;
+#header{
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: 100%;
+  background-image: url(../img/pic/meb_tiny.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 .intro{
   color:#F2850E;
@@ -92,7 +92,7 @@ nav ul li a:hover::after{
 /* --------------about------------*/
 #about{
   padding: 80px 0;
-  color: #ecca30;
+  color: #F9E27C;
 }
 .row{
   display: flex;
@@ -168,7 +168,7 @@ nav ul li a:hover::after{
   overflow: hidden;
 }
 .work img{
-  width: 100%
+  width: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
@@ -177,6 +177,7 @@ nav ul li a:hover::after{
   width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0,0,0,0.6),#ecca30);
+  color: #080808;
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -187,7 +188,7 @@ nav ul li a:hover::after{
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   transition: height 0.5s;
 }
 .layer h3{
@@ -196,7 +197,7 @@ nav ul li a:hover::after{
 }
 .layer a{
   margin-top: 20px;
-  color: #1a227e;
+  color: #59512D;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -263,23 +264,6 @@ nav ul li a:hover::after{
 .contact-right form{
   width: 100%;
 }
-form input, form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #262626;
-  padding: 15px;
-  margin: 15px;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 6px;
-}
-form .btn2{
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 20px;
-  cursor: pointer;
-}
 .copyright{
   width: 100%;
   text-align: center;
@@ -299,9 +283,9 @@ Medium devices (640px and larger)
 }
 @media only screen and (max-width: 640px) {
   #header{
-    background-size: 600px;
     text-align: unset;
     padding: 20px 0 13px;
+    background-size: 35%;
   }
   .header-text{
     margin-top: 100%;
@@ -330,12 +314,12 @@ Medium devices (640px and larger)
     display: block;
     margin: 25px;
   }
-    nav ul .fa-solid{
-      position: absolute;
-      top: 25px;
-      left:25px;
-      cursor: pointer;
-  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left:25px;
+    cursor: pointer;
+}
   .sub-title{
     font-size: 40px;
   }
@@ -358,12 +342,6 @@ Medium devices (640px and larger)
   .copyright{
     font-size: 14px;
   }
-    }
-    #msg{
-      color: #61b752;
-      margin-top: -40px;
-      display: block;
-    }
     /* ==============================
 Large devices (1024px or larger)
 ================================= */
