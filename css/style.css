@@ -98,10 +98,9 @@ nav ul li a:hover::after{
   font-size: 76px;
   color: #ecca30;
 }
-.column col-md-6 col-lg-7 h2{
-  font-weight: 100;
+.header-text h2{
   font-size: 29px;
-  margin-top: 20px;
+  font-weight: 100;
 }
 .header-text p{
   font-size: 29px;
