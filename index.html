@@ -27,8 +27,10 @@
   </script>
   <script src="https://kit.fontawesome.com/c9ae6cdb2d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@100;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,7 +41,6 @@
   <!-- End Google Tag Manager (noscript) -->
   <div class="container">
     <nav>
-        <img src="img/logo/js.svg" class="logo" alt="logo">
       <ul>
         <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -48,21 +49,22 @@
         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <img src="img/logo/js.svg" class="logo" alt="logo">
     </nav>
-    <div class="container header-container header-text" id="header">
-      <div class="row">
-        <div class="column col-md-6 col-lg-7">
-            <h2>UX Designer & HR Professional</h2>
-            <h1>Hi, I'm <br><span>Jasmin</span><br></h1>
-            <p>An insight-seeker, communicator, and experimenter dedicated to create human experiences that <em>feel</em>
-              good</p>
-        </div>
-        <div class="column col-md-6 col-lg-5">
-          <img src="img/pic/background.png" alt="picture of Jasmin">
-        </div>
+
+  </div>
+  <div class="container header-container header-text" id="header">
+    <div class="row">
+      <div class="column col-md-6 col-lg-7">
+        <h2>UX Designer & HR Professional</h2>
+        <h1>Hi, I'm <br><span>Jasmin</span><br></h1>
+        <p>An effective communicator and a passionate experimenter dedicated to create human experiences that <em>feel</em>
+          good</p>
+      </div>
+      <div class="column col-md-6 col-lg-5">
+        <img src="img/pic/background.png" alt="picture of Jasmin">
       </div>
     </div>
-
   </div>
   <!-- about -->
   <div id="about">
@@ -174,7 +176,6 @@
   <div class="copyright">
     <p>copyright © Jasmin. Made with <i class="fa-solid fa-heart"></i> Easy Tutorials </p>
   </div>
-  </div>
   <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -201,24 +202,6 @@
     function closemenu() {
       sidemenu.style.right = "-200px";
     }
-  </script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxlIcLqYQ2Yqw2goYULT9hPDzWorbF29gwQE4C0zU8ul8dZjxoO3wQNkpDsfbEru1a2/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          msg.innerHTML = "Message sent successfully"
-          setTimeout(function () {
-            msg.innerHTML = ""
-          }, 5000)
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
   </script>
 </body>
 
