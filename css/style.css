@@ -27,7 +27,7 @@ body{
   text-align: left;
 }
 .header-container img {
-  width: 1200px;
+  width: 1000px;
   margin: 30px;
   padding: 30px;
 }
@@ -54,7 +54,6 @@ nav ul li a{
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  position: fixed;
 }
 nav ul li a::after{
   content: '';
